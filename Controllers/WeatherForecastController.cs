@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using actionFilter.Filters;
+using actionFilter.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -9,6 +11,8 @@ namespace actionFilter.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [PermissionFilter]
+    [ExceptionFilter]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

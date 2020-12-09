@@ -1,6 +1,6 @@
 using System;
 
-namespace actionFilter
+namespace actionFilter.Models
 {
     public class WeatherForecast
     {
